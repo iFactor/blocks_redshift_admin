@@ -121,7 +121,7 @@ view: redshift_data_loads {
       from stl_load_commits
        ;;
   }
-  
+
   dimension: root_bucket {
     type: string
     sql: ${TABLE}.root_bucket ;;
@@ -829,13 +829,13 @@ view: redshift_query_execution {
     ;;
   }
   dimension: step_average_slice_time {
+    description: "Average time among slices, in seconds, for this step"
     type: number
-    sql: "Average time among slices, in seconds, for this step" ;;
     sql: ${TABLE}.avgtime/1000000 ;;
   }
   dimension: step_max_slice_time {
+    description: "Maximum time among slices, in seconds, for this step"
     type: number
-    sql: "Maximum time among slices, in seconds, for this step" ;;
     sql: ${TABLE}.maxtime/1000000 ;;
   }
   dimension: step_skew {

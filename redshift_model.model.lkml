@@ -2,7 +2,7 @@
 # #
 # # Make sure this is a connection where the database user has sufficient permissions (per above link)
 
-connection: "YOUR_CONNECTION_HERE"
+connection: "agora"
 case_sensitive: no
 
 include: "redshift_*.dashboard"
@@ -19,6 +19,8 @@ explore: redshift_db_space {
 explore: redshift_etl_errors {
   hidden: yes
 }
+
+explore: stl_load_errors {}
 
 explore: redshift_tables {
   hidden: yes
@@ -117,4 +119,3 @@ explore: redshift_query_execution {
   persist_for: "0 seconds"
   fields: [ALL_FIELDS*, -redshift_query_execution.emitted_rows_to_table_rows_ratio]
 }
-
