@@ -11,16 +11,19 @@ view: stl_load_errors {
 
   dimension: userid {
     type: number
+    value_format_name: id
     sql: ${TABLE}.userid ;;
   }
 
   dimension: slice {
     type: number
+    value_format_name: id
     sql: ${TABLE}.slice ;;
   }
 
   dimension: tbl {
     type: number
+    value_format_name: id
     sql: ${TABLE}.tbl ;;
   }
 
@@ -31,11 +34,13 @@ view: stl_load_errors {
 
   dimension: session {
     type: number
+    value_format_name: id
     sql: ${TABLE}.session ;;
   }
 
   dimension: query {
     type: number
+    value_format_name: id
     sql: ${TABLE}.query ;;
   }
 
@@ -46,6 +51,7 @@ view: stl_load_errors {
 
   dimension: line_number {
     type: number
+    value_format_name: id
     sql: ${TABLE}.line_number ;;
   }
 
@@ -66,6 +72,7 @@ view: stl_load_errors {
 
   dimension: position {
     type: number
+    value_format_name: id
     sql: ${TABLE}.position ;;
   }
 
@@ -81,6 +88,7 @@ view: stl_load_errors {
 
   dimension: err_code {
     type: number
+    value_format_name: id
     sql: ${TABLE}.err_code ;;
   }
 
