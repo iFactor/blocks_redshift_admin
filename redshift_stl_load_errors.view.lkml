@@ -1,8 +1,9 @@
 view: stl_load_errors {
-  derived_table: {
-    sql: select * from stl_load_errors
-      ;;
-  }
+  sql_table_name: stl_load_errors  ;;
+  # derived_table: {
+  #   sql: select * from stl_load_errors
+  #     ;;
+  # }
 
   measure: count {
     type: count
