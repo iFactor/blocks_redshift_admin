@@ -1,4 +1,4 @@
-connection: "agora"
+connection: "redshift-prod-ingest"
 case_sensitive: no
 
 include: "redshift_*.dashboard"
